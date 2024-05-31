@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket de Compra</title>
+    <link rel="stylesheet" href="../static/css/ticket.css">
+</head>
+<body>
+    <script src="{{ url_for('static', filename='js/scriptTicket.js') }}"></script>
+
+    <!-- Aquí puedes agregar la imagen -->
+    <img src="https://www.sopitas.com/wp-content/uploads/2024/03/jerseys-selecciones-participantes-copa-america-2024-nike-adidas-puma.png?resize=350%2C200" alt="Descripción de la imagen">
+
+    <!-- Mensaje de agradecimiento -->
+    <div class="container">
+        <p>Gracias por su compra.</p>
+        <!-- Botón de regresar -->
+        <button onclick="window.location.href='{{ url_for('home') }}'">Regresar</button>
+    </div>
+</body>
+</html>
+

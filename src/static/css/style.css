@@ -1,0 +1,283 @@
+:root {
+  --gris: #ff0000;
+  --blanco: #ffffff; /*color del pie*/
+  --negro: #000000;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-snap-type: y mandatory;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px; /* 1rem = 10px */
+  font-family: "PT Sans", sans-serif;
+  background-color: #ff0000;
+  color: #333;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: var(--negro);
+}
+
+/*Utilidades*/
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+.logo__nombre {
+  color: var(--negro);
+  font-family: 'Roboto Slab', serif; /* Aplica la nueva fuente */
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Barra */
+.barra {
+  width: 100%;
+  background-color: rgb(59, 52, 52);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.barra p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0;
+  color: var(--blanco);
+}
+
+.barra a {
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo__nombre {
+  font-weight: bold;
+  color: var(--blanco);
+}
+
+.navegacion {
+  display: flex;
+  gap: 3rem;
+}
+
+.icon {
+  width: 4rem;
+}
+
+
+
+
+
+
+
+/* catalogo */
+
+
+
+
+.container {
+  margin-top: 5rem;
+}
+
+#catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 155, 8, 0.814); 
+  border-radius: 10px;
+}
+
+#catalogo img {
+  width: 150px;
+  height: 150px;
+  margin: 1rem auto;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#catalogo img:hover {
+  box-shadow: 0 0 20px rgba(0, 155, 8, 0.814);
+  transform: scale(1.05);
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.product-card h5 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: rgb(255, 0, 0);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+.table {
+  margin-top: 2rem;
+}
+
+.table th, .table td {
+  text-align: center;
+}
+
+
+
+
+
+/* Resumen de Compra */
+#resumenCompra {
+  margin-top: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.814);
+}
+
+table {
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 155, 8, 0.814);
+}
+
+th,
+td {
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0, 155, 8, 0.814);
+}
+
+#finalizarCompra,
+#mostrarCalculadora {
+  padding: 0.7rem;
+  margin-top: 20px;
+  width: 50%;
+}
+
+/* Margenes y Padding */
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  margin-top: 2rem;
+  padding: 3rem;
+  background-color: var(--negro);
+  width: 100%;
+}
+
+.p-footer {
+  text-align: center;
+  color: var(--blanco);
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+
+--------------------------------------------
+
+/* Estilos para la sección Acerca de */
+#acerca-de {
+  padding: 50px 0; /* Espaciado interno superior e inferior */
+  background-color: #0080ff; /* Color de fondo */
+}
+
+#acerca-de h2 {
+  color: #333; /* Color del texto del título */
+}
+
+#acerca-de img {
+  max-width: 100%; /* Imagen responsive, tamaño máximo del contenedor */
+}
+
+#acerca-de p {
+  color: #555; /* Color del texto del párrafo */
+}
